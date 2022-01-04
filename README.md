@@ -6,13 +6,13 @@
   <a href="#memo-licença">Licença</a>
 </p>
 
+ ### Tela de Login
 <p align="center">
-  ### Tela de Login
  <img src="./src/assets/foto01.JPG" />
 </p>
 
-<p align="center">
   ### Feed
+<p align="center">
  <img src="./src/assets/foto02.JPG" />
 </p>
 
