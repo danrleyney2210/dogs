@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
- <img src="./assets/app5.png" />
+ <img src="./src/assets/foto01.JPG" />
 
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
 
