@@ -3,16 +3,24 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components'
 import { PhotoComments } from './PhotoComments';
 import visu from '../../assets/visualizacao-black.svg'
+import { UserContext } from './../../userContext';
+import { PhotoDelete } from './PhotoDelete';
+import { Image } from '../Helper/Image'
 
 export const PhotoContent = ({data}) => {
   const { photo, comments} = data;
+  const user = React.useContext(UserContext);
 
   return (
     <ContentPhoto>
-      <img className="img" src={photo.src} alt={photo.title} />
+      <Image src={photo.src} alt={photo.title} />
       <div className='details'>
         <p className="author">
-          <Link to={`/perfil/${photo.author}`}>@{photo.author}</Link>
+          {user.data && user.data.username === photo.author ? (
+              <PhotoDelete  id={photo.id}/> 
+            ) : (
+              <Link to={`/perfil/${photo.author}`}>@{photo.author}</Link>        
+            )}
           <span className="visualizacoes">{photo.acessos}</span>
         </p>
 

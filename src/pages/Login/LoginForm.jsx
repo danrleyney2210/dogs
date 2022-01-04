@@ -13,7 +13,7 @@ export const LoginForm = () => {
   const password = userForm();
 
   const { userLogin, data, error, loading } = React.useContext(UserContext)
-  console.log(data)
+  // console.log(data)
 
   async function handleSubmit(event) {
     event.preventDefault();
